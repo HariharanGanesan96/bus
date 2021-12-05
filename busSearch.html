@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="busSearch.css">
+</head>
+
+<body>
+    <div class="mainbody">
+        <div class="logo">
+            <h1>Welcome To SearchMyBusS</h1>
+        </div>
+        <div class="inputs">
+            
+                <div class="from">
+                    <label for="from">From</label>
+                    <input type="text" name="from" id="from" placeholder="starting location" list="city" required>
+                </div>
+                <div class="to">
+                    <label for="to">To</label>
+                    <input type="text" name="to" id="to" placeholder="destination" list="city" required>
+                </div>
+                <div class="date">
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date" min="2021-12-03" max="2022-02-02" value="2021-12-03">
+                </div>
+                <div class="search">
+                    <button type="submit" onclick="c()">search</button>
+                </div>
+            <datalist id="city">
+                <option value="Chennai"></option>
+                <option value="Madurai"></option>
+                <option value="Trichy"></option>
+                <option value="Ooty"></option>
+            </datalist>
+            <div class="inputs1" id="1">
+                <label for="busname" id="busnam">Bus Name</label>
+                <input type="text" name="busname" id="bustype">
+                <label for="seatcount">Seat Count</label>
+                <input type="number" name="count" id="count" min="0">
+                <button type="button" onclick="calculate()">Calculate</button>
+                <label for="totalamount">Total Amount</label>
+                <input type="number" name="totalamount" id="totalamount" value="0" min="0">
+            </div>
+            <div class="buslist">
+                <div id="bus1" onclick="show('busname1')">
+                    <p name="busname1" id="busname1"></p>
+                    <p name="seats1" id="seats1"></p>
+                </div>
+                <div id="bus2" onclick="show('busname2')">
+                    <p name="busname2" id="busname2"></p>
+                    <p name="seats2" id="seats2"></p>
+                </div>
+                <div id="bus3" onclick="show('busname3')">
+                    <p name="busname3" id="busname3"></p>
+                    <p name="seats3" id="seats3"></p>
+                </div>
+                <div id="bus4" onclick="show('busname4')">
+                    <p name="busname4" id="busname4"></p>
+                    <p name="seats4" id="seats4"></p>
+                </div>
+                <div id="bus5" onclick="show('busname5')">
+                    <p name="busname5" id="busname5"></p>
+                    <p name="seats5" id="seats5"></p>
+                </div>
+                <div id="bus6" onclick="show('busname6')">
+                    <p name="busname6" id="busname6"></p>
+                    <p name="seats6" id="seats6"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="busSearch copy.js">
+
+    </script>
+
+</body>
+
+</html>
